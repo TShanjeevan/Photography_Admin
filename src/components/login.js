@@ -5,7 +5,7 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';  // Change icon to FaEye and
 const Login = () => {
   const [email, setEmail] = useState(''); // Changed username to email
   const [password, setPassword] = useState('');
-  const [rememberMe, setRememberMe] = useState(false);
+  const [rememberMe] = useState(false);
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState(''); // Success message state
   const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
