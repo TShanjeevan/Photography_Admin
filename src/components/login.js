@@ -13,16 +13,17 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
     // Basic validation
     if (!email || !password) {
       setError('Both fields are required!');
+      setTimeout(() => setError(''), 1200); // Clear error message after 1.2 seconds
       return;
     }
-
+  
     // Hardcoded password check (replace with actual backend logic)
     const correctPassword = 'password123'; // Example hardcoded password
-
+  
     if (password === correctPassword) {
       // Successful login
       console.log('Email:', email);
@@ -38,6 +39,7 @@ const Login = () => {
       }, 1500); // 1.5 second delay for the success message to be visible
     } else {
       setError('Incorrect password. Please try again.');
+      setTimeout(() => setError(''), 1400); // Clear error message after 1.2 seconds
       setSuccessMessage(''); // Clear success message if login fails
     }
   };
@@ -92,23 +94,23 @@ const Login = () => {
               onClick={() => setShowPassword(!showPassword)}
               className="absolute right-3 top-1/2 transform -translate-y-3/2"
             >
-              {showPassword ? <FaEyeSlash className="text-gray-600" size={20} /> : <FaEye className="text-gray-600" size={20} />}
+              {showPassword ? <FaEye className="text-gray-600" size={20} /> : <FaEyeSlash className="text-gray-600" size={20} />}
             </button>
           </div>
 
           {/* Remember Me and Forgot Password */}
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center">
-              <input
+              {/* <input
                 type="checkbox"
                 id="rememberMe"
                 checked={rememberMe}
                 onChange={(e) => setRememberMe(e.target.checked)}
                 className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
-              />
-              <label htmlFor="rememberMe" className="ml-2 text-sm text-gray-700">
+              /> */}
+              {/* <label htmlFor="rememberMe" className="ml-2 text-sm text-gray-700">
                 Remember Me
-              </label>
+              </label> */}
             </div>
             <a href="/forgetpassword" className="text-sm text-blue-600 hover:underline">
               Forgot Password?
