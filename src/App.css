@@ -1,0 +1,85 @@
+/* .app {
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.dashboard {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #1d1d1d;
+  color: white;
+  padding: 20px;
+}
+
+.profile {
+  margin-bottom: 20px;
+}
+
+.profile h2 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.logout {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content {
+  width: 80%;
+  padding: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.stat {
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+}
+
+.activity, .top-performers, .channels, .upgrade {
+  margin-bottom: 20px;
+}
+
+.channel, .upgrade button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.channel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.upgrade {
+  text-align: center;
+} */
